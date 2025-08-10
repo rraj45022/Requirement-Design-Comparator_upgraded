@@ -1,0 +1,16 @@
+fastapi==0.116.1                    # Latest as of July 11, 2025
+uvicorn[standard]==0.35.0            # Latest as of June 28, 2025
+python-multipart==0.0.20             # Latest for Ubuntu 25.10 / Dec 2024
+pydantic==2.11                       # Latest as of June 14, 2025
+spacy==3.7                           # Most recent major version (check 3.8.0 direct availability)[17]
+scikit-learn==1.7.1                  # Latest as of July 18, 2025
+PyYAML==6.0.2                        # Latest as of August 6, 2024
+openai>=1.0.0                        # Use latest 1.x branch[12]
+python-dotenv==1.0.0                 # Latest
+# (For the following, check PyPI for latest)
+sqlalchemy
+alembic
+asyncpg
+redis
+aiofiles
+

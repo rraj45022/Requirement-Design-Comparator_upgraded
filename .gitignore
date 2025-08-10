@@ -1,0 +1,9 @@
+# Ignore Python virtual environments in /backend/
+backend/venv/
+
+# Ignore all .env files anywhere in the project
+.env
+*.env
+*.pyc
+#frontend nodemodules
+frontend/node_modules/
