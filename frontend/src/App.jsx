@@ -160,7 +160,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>&copy; 2024 Requirements vs Design Comparator. Built with React & FastAPI.</p>
+        <p>&copy; 2025 Requirements vs Design Comparator. Built with React & FastAPI.</p>
       </footer>
     </div>
   );
