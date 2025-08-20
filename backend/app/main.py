@@ -267,16 +267,7 @@ async def get_chat_history(conversation_id: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/chat/conversations")
-async def get_all_conversations():
-    """Get list of all conversations."""
-    try:
-        chat_service = get_chat_service()
-        conversations = chat_service.get_conversations_list()
-        return {"conversations": conversations}
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+
 
 @app.get("/")
 async def root():

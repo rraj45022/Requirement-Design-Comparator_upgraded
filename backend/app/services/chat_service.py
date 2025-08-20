@@ -90,7 +90,7 @@ class ChatService:
             return {
                 "response": response,
                 "conversation_id": conversation_id,
-                "message_count": len(history) + 1
+                "message_count": len(history)
             }
             
         except Exception as e:
@@ -114,13 +114,7 @@ class ChatService:
             for msg in messages
         ]
     
-    def get_conversations_list(self) -> List[Dict]:
-        """Get list of all conversations."""
-        conversations = []
-        for conv_id in self.conversation_store.conversations.keys():
-            summary = self.conversation_store.get_conversation_summary(conv_id)
-            conversations.append(summary)
-        return conversations
+    
 
 # Global instance
 chat_service = ChatService()

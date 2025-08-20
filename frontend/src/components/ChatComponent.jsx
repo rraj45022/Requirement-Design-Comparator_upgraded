@@ -3,7 +3,13 @@ import { Send, MessageCircle, User, Bot, Clock } from 'lucide-react';
 import {sendChatMessage, getChatHistory} from '../services/apiService';
 
 const ChatComponent = ({ conversationId, onConversationUpdate }) => {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    {
+      role: 'assistant',
+      content: "Hello! I'm your AI assistant. I'm here to help you analyze requirements and design documents. Feel free to ask me any questions about your uploaded documents or request specific analyses.",
+      timestamp: new Date().toISOString(),
+    }
+  ]);
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [currentConversationId, setCurrentConversationId] = useState(conversationId);

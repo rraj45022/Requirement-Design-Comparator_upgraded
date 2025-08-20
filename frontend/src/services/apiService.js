@@ -62,11 +62,6 @@ export const getChatHistory = async (conversationId) => {
   return response.data;
 };
 
-// Get all conversations
-export const getAllConversations = async () => {
-  const response = await api.get('/chat/conversations');
-  return response.data;
-};
 
 // Health check
 export const checkHealth = async () => {
